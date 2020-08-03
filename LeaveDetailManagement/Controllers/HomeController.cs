@@ -1,0 +1,104 @@
+﻿
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using LeaveDetailManagement.Models;
+using System.Net.Http;
+namespace LeaveDetailManagement.Controllers
+{
+    public class HomeController : Controller
+    {
+        public ActionResult Index()
+        {
+            IEnumerable<Employee> empobj = null;
+            HttpClient hc = new HttpClient();
+            hc.BaseAddress = new Uri("https://localhost:44324/api/Values");
+            var consumeapi = hc.GetAsync("Values");
+            consumeapi.Wait();
+            var readdata = consumeapi.Result;
+            if (readdata.IsSuccessStatusCode)
+            {
+                var displaydata = readdata.Content.ReadAsAsync<List<Employee>>();
+                displaydata.Wait();
+                empobj = displaydata.Result;
+
+            }
+
+            return View(empobj);
+        }
+        //public ActionResult Create()
+        //{
+        //    return View();
+        //}
+        //[HttpPost]
+        //public ActionResult Create(Employee insertemp)
+        //{
+        //    HttpClient hc = new HttpClient();
+        //    hc.BaseAddress = new Uri("https://localhost:44324/api/Values");
+        //    var insertrecord = hc.PostAsJsonAsync<Employee>("Values", insertemp);
+        //    insertrecord.Wait();
+        //    var savedata = insertrecord.Result;
+        //    if (savedata.IsSuccessStatusCode)
+        //    {
+        //        return RedirectToAction("Index");
+
+        //    }
+        //    return View("Create");
+        //}
+        //public ActionResult Details()
+        //{
+        //    Employee empobj = null;
+        //    HttpClient hc = new HttpClient();
+        //    hc.BaseAddress = new Uri("https://localhost:44324/api/");
+        //    var consumeapi = hc.GetAsync("Values");
+        //    consumeapi.Wait();
+        //    var readdata = consumeapi.Result;
+        //    if (readdata.IsSuccessStatusCode)
+        //    {
+        //        var displaydata = readdata.Content.ReadAsAsync<Employee>();
+        //        displaydata.Wait();
+        //        empobj = displaydata.Result;
+        //    }
+        //    return View(empobj);
+        //}
+
+        //public ActionResult Edit(int id)
+        //{
+        //    Employee empobj = null;
+        //    HttpClient hc = new HttpClient();
+        //    hc.BaseAddress = new Uri("https://localhost:44324/api/");
+        //    var consumeapi = hc.GetAsync("Values?id=" + id.ToString());
+        //    consumeapi.Wait();
+        //    var readdata = consumeapi.Result;
+        //    if (readdata.IsSuccessStatusCode)
+        //    {
+        //        var displaydata = readdata.Content.ReadAsAsync<Employee>();
+        //        displaydata.Wait();
+        //        empobj = displaydata.Result;
+        //    }
+        //    return View(empobj);
+        //}
+        //[HttpPost]
+        //public ActionResult Edit(Employee insertemp)
+        //{
+        //    HttpClient hc = new HttpClient();
+        //    hc.BaseAddress = new Uri("https://localhost:44324/api/");
+        //    var insertrecord = hc.PutAsJsonAsync<Employee>("Values", insertemp);
+        //    insertrecord.Wait();
+        //    var savedata = insertrecord.Result;
+        //    if (savedata.IsSuccessStatusCode)
+        //    {
+        //        return RedirectToAction("Index");
+
+        //    }
+        //    //else
+        //    //{
+        //    //    ViewBag.message("record updated");
+        //    //}
+        //    return View(insertemp);
+        //}
+
+    }
+}

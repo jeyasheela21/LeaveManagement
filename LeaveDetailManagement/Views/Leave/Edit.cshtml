@@ -1,0 +1,161 @@
+﻿@model LeaveDetailManagement.Models.leavedetail
+    @{
+        ViewBag.Title = "Edit";
+    }
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                margin: 0;
+            }
+
+            nav.topnav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: midnightblue;
+            }
+
+                nav.topnav li {
+                    float: left;
+                }
+
+                    nav.topnav li a {
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                    }
+
+                        nav.topnav li a:hover:not(.active) {
+                            background-color: #111;
+                        }
+
+                        nav.topnav li a.active {
+                            background-color: #4CAF50;
+                        }
+
+                    nav.topnav li.right {
+                        float: right;
+                    }
+
+            @@media screen and (max-width: 600px) {
+                nav.topnav li.right,
+                nav.topnav li {
+                    float: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header class="top_panel top_panel_style_2 scheme_default">
+
+            <span style=" font-weight: bold;    font-size: 28px;">Jvs Project</span>
+            <nav class="topnav">
+               
+                <ul>
+
+                    
+
+                    <li> <a>@Html.ActionLink("Back", "Index", "Leave", new { area = "" }, null)</a></li>
+
+
+                  
+                </ul>
+            </nav>
+        </header>
+
+        @using (Html.BeginForm(FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div>
+             
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.empname)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.empname)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.FromDate)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.FromDate)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ToDate)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.ToDate)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Leavetype)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Leavetype)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Descr)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Descr)
+                    </dd>
+
+                    <dt>
+                        @Html.LabelFor(model => model.status, htmlAttributes: new { @class = "control-label col-md-2" })
+                    </dt>
+                    <dd>
+                        @*<td style="padding:10px;"><input class="StatusChange" type="button" value="Approve" onclick="location.href='@Url.Action("LeaveApproval", "Leave")'" /></td>
+                        <td style="padding:10px;"><input class="StatusChange" type="button" value="Reject" onclick="location.href='@Url.Action("LeaveRejection", "Leave")'" /></td>*@
+                        <td>
+                            <div class="col-md-10">
+                                <label class="radio-inline">
+                                    @Html.RadioButtonFor(model => model.status, "Accepted", new { @name = "stat" })
+                                    Acccepted
+                                </label>
+                                <label class="radio-inline">
+                                    @Html.RadioButtonFor(model => model.status, "Rejected", new { @name = "stat" })
+                                    Rejected
+                                </label>
+                                @Html.ValidationMessageFor(model => model.status, "", new { @class = "text-danger" })
+                            </div>
+                        </td>
+                    </dd>
+
+                </dl>
+
+
+
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Save" class="btn btn-default" />
+                    </div>
+                </div>
+
+            </div>
+        }
+
+        <div>
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }

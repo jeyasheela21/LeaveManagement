@@ -1,0 +1,898 @@
+﻿
+<!DOCTYPE html>
+<html lang="en-US" class="no-js scheme_default">
+
+
+<head>
+    <title>Jvc |Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+
+    <link href="~/Scripts/StyleSheet1.css" rel="stylesheet" />
+    <link href="~/Scripts/custom.css" rel="stylesheet" />
+    <link href="~/Scripts/responsive.css" rel="stylesheet" />
+    <link href="~/Scripts/StyleSheet.css" rel="stylesheet" />
+    <link href="~/Scripts/styles.css" rel="stylesheet" />
+    <link href="~/Scripts/Jscomp.css" rel="stylesheet" />
+    <link href="~/Scripts/fonts.css" rel="stylesheet" />
+    <link href="~/Scripts/fontello.css" rel="stylesheet" />
+    <link href="~/Scripts/fontawesome.css" rel="stylesheet" />
+    <link href="~/Scripts/custom1.css" rel="stylesheet" />
+    <link href="~/Scripts/custom.css" rel="stylesheet" />
+    <link href="~/Scripts/contentcustom.css" rel="stylesheet" />
+    <link href="~/Scripts/colors.css" rel="stylesheet" />
+    <link href="~/Scripts/animation.css" rel="stylesheet" />
+    
+    <style type="text/css">
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 100px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.8) !important; /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #035a95;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #888;
+            width: 25%;
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+
+
+       
+        /*set a style for the buttons*/
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+            /* set a hover effect for the button*/
+
+            button:hover {
+                opacity: 0.8;
+            }
+        /*set extra style for the cancel button*/
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+        /*centre the display image inside the container*/
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+        /*set image properties*/
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+        /*set padding to the container*/
+
+        .container {
+            padding: 16px;
+        }
+        /*set the forgot password text*/
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+        /*set styles for span and cancel button on small screens*/
+
+        @@media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+
+<body class="homepg home page body_style_wide scheme_default blog_style_excerpt sidebar_hide expand_content remove_margins header_style_header-2 header_title_off no_layout vc_responsive" oncontextmenu="return false;">
+    <div class="body_wrap">
+        <div class="page_wrap">
+            <header class="top_panel top_panel_style_2 scheme_default">
+               
+                    <span style=" font-weight: bold;    font-size: 28px;">Jvs Project</span>        
+                    <ul id="menu_main" class="sc_layouts_menu_nav menu_main_nav">
+                        <li class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children">
+
+                        <li>
+                            @Html.ActionLink("EmployeeDetails", "Index", "Home", new { area = "" }, null)
+                        </li>
+
+                        <li class="menu-item menu-item-has-children">
+                            @Html.ActionLink("LeaveDetails", "Index", "Leave", new { area = "" }, null)
+
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a target="_blank" href="#"><span>Blog</span></a>
+
+                        </li>
+                        <li class="menu-item"><a target="_blank" href=""><span>Contacts</span></a></li>
+                        <li class="menu-item menu-item-has-children">
+                            <a><span id="myBtn" style="cursor: pointer;">Login</span></a>
+                          
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+
+                                    <div class="imgcontainer">
+                                        <h3>jvsproject</h3>
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-md-12">
+                                        </div>
+                                    </div>
+
+                                    <div class="container">
+
+                                        <div class="row">
+
+                                            <div class="col-md-12">
+                                            </div>
+                                        </div>
+                                       
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+                        
+              
+           
+            <div class="page_content_wrap scheme_default">
+                <div class="content_wrap">
+                    <div class="content">
+                        <article class="post_item_single page hentry">
+                            <div class="post_content entry-content">
+                                <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid bg_gradient vc_custom_1467796921857 vc_row-has-fill">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner">
+                                            <div class="wpb_wrapper">
+                                                <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery">
+                                                    <div id="rev_slider_1_1" class="rev_slider fullwidthabanner" data-version="5.3.1.5">
+                                                        <ul>
+                                                            <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="https://mhrms.io/layout/images/1-1-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                                                <img src="https://mhrms.io/layout/images/1-1.jpg" alt="" title="1" width="1170" height="593" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                                                <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-1-layer-4" data-x="['left','left','left','left']" data-hoffset="['-10','-10','-10','-10']" data-y="['top','top','top','top']" data-voffset="['-10','-10','-10','-10']" data-width="500" data-height="1000" data-whitespace="nowrap" data-visibility="['off','off','off','on']" data-type="shape" data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":300,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"> </div>
+                                                                <div class="tp-caption tp-resizeme" id="slide-1-layer-1" data-x="['left','left','left','left']" data-hoffset="['120','40','60','30']" data-y="['top','top','top','top']" data-voffset="['150','150','150','150']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:top;","speed":700,"to":"o:1;","delay":1200,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">Ever-Changing Demands?  </div>
+                                                                <div class="tp-caption tp-resizeme" id="slide-1-layer-2" data-x="['left','left','left','left']" data-hoffset="['120','40','60','30']" data-y="['top','top','top','top']" data-voffset="['180','180','180','180']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"x:50px;opacity:0;","speed":700,"to":"o:1;","delay":700,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
+                                                                    Partner with  to
+                                                                    <br> Meet Your Business HR Goals!
+                                                                </div>
+                                                                <div class="tp-caption tp-resizeme" id="slide-1-layer-3" data-x="['left','left','left','left']" data-hoffset="['120','40','60','30']" data-y="['top','top','top','top']" data-voffset="['357','357','357','357']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"#","delay":""}]' data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":700,"to":"o:1;","delay":1700,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;background:linear-gradient(to right,#b9d057 0%,#b9d057 100%);"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[50,50,50,50]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[50,50,50,50]">More info -CTA</div>
+                                                            </li>
+                                                            <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="https://mhrms.io/layout/images/2-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                                                <img src="https://mhrms.io/layout/images/1-1.jpg" alt="" title="2" width="1170" height="593" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                                                <div class="tp-caption tp-resizeme" id="slide-3-layer-1" data-x="['left','left','left','left']" data-hoffset="['60','60','60','30']" data-y="['top','top','top','top']" data-voffset="['150','150','150','150']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:top;","speed":700,"to":"o:1;","delay":1200,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">Innovative Solutions </div>
+                                                                <div class="tp-caption tp-resizeme" id="slide-3-layer-2" data-x="['left','left','left','left']" data-hoffset="['60','60','60','30']" data-y="['top','top','top','top']" data-voffset="['180','180','180','180']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"x:50px;opacity:0;","speed":700,"to":"o:1;","delay":700,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">
+                                                                    Efficiently Manage End-To-End
+                                                                    <br> HR Operations Remotely!
+                                                                </div>
+                                                                <div class="tp-caption tp-resizeme" id="slide-3-layer-3" data-x="['left','left','left','left']" data-hoffset="['60','60','60','30']" data-y="['top','top','top','top']" data-voffset="['357','357','357','357']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"#","delay":""}]' data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":700,"to":"o:1;","delay":1700,"ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1.00);br:0px 0px 0px 0px;background:linear-gradient(to right,#b9d057 0%,#b9d057 100%);"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[50,50,50,50]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[50,50,50,50]">More info -CTA </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row-full-width vc_clearfix"></div>
+                                <div class="vc_row wpb_row vc_row-fluid fullwidth_1">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_empty_space empty_6-8">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row wpb_row vc_row-fluid fullwidth_1">
+                                    <div class="wpb_column vc_column_container vc_col-sm-6">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper">
+                                                        <h5 class="cblue">HOW WE ARE DIFFERENT</h5>
+                                                        <h2>A simple cloud-based solution to drive productive across organization</h2>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_column vc_column_container vc_col-sm-6">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_empty_space empty_3 hide_on_mobile">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper">
+                                                        <p>Successfully growing business of any size requires effective and innovative software to handle all HR operations. mHRMS is a perfect solution to any HR department to get information and engage in task management at their fingertips. </p>
+                                                        <p>It is easily manageable, and built to suit all sizes of organizations.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row wpb_row vc_row-fluid fullwidth_1">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_empty_space empty_6">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row wpb_row vc_row-fluid bg_position_center vc_custom_1474376739611 vc_row-has-fill fullwidth_1 scheme_dark">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_empty_space empty_8 hide_on_mobile hide_on_tablet">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                                <div class="vc_empty_space empty_5 hide_on_mobile">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                                <div id="sc_content_1211812500" class="sc_content sc_content_default sc_float_left sc_align_left bg_gradient sc_content_width_1_2 sc_padding_small">
+                                                    <div class="sc_content_container">
+                                                        <div class="vc_empty_space empty_3">
+                                                            <span class="vc_empty_space_inner"></span>
+                                                        </div>
+                                                        <div class="wpb_text_column wpb_content_element ">
+                                                            <div class="wpb_wrapper">
+                                                                <h3>Change with time, switch to online on-borading with us!</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sc_icons sc_icons_default sc_icons_size_small sc_align_left">
+                                                            <div class="sc_icons_item">
+                                                                <div class="sc_icons_icon sc_icons_icon_type_fontawesome icon-line">
+                                                                    <span class="sc_icons_icon_type_fontawesome icon-line"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row wpb_row vc_row-fluid fullwidth_1">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_empty_space empty_7">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1474881211962 vc_row-has-fill">
+                                    <div class="wpb_column vc_column_container vc_col-sm-8">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_empty_space empty_6-8">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+
+                                                <div class="wpb_text_column wpb_content_element vc_custom_1468846762392">
+                                                    <div class="wpb_wrapper">
+                                                        <h5 class="cblue">About Us</h5>
+                                                        <h1>Redesigning the HR process to suit the trend!</h1>
+                                                        <p>
+                                                            Equipping your business with the right software is much needed to increase the performance of your employees. Maintec’s HRMS software is designed keeping in mind the goals of HR Departments. It can be utilized right from acquiring the skill to managing the end-to-end operations. Also, it gives the client the option of adding the required fields and functionalities that match their HR goals.
+                                                        </p>
+                                                        <p>
+                                                            Best  software that will let you manage the onboarding, employee data, attendance, leave, payroll, travel expense, measure performance, and much more..
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="vc_empty_space empty_4">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                                <div class="sc_item_button sc_button_wrap">
+                                                    <a href="about.html" class="sc_button sc_button_default sc_button_size_large sc_button_icon_left">
+                                                        <span class="sc_button_text">
+                                                            <span class="sc_button_title">More info</span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="vc_empty_space empty_8-8">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_column vc_column_container vc_col-sm-4">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_empty_space empty_9-7 hide_on_mobile">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                                <div id="sc_skills_807" class="sc_skills sc_skills_counter" data-type="counter">
+                                                    <div class="sc_skills_columns sc_item_columns trx_addons_columns_wrap columns_padding_bottom">
+                                                        <div class="sc_skills_column trx_addons_column-1_2">
+                                                            <div class="sc_skills_item_wrap">
+                                                                <div class="sc_skills_item">
+                                                                    <div class="sc_skills_icon icon-target"></div>
+                                                                    <div class="sc_skills_total" data-start="0" data-stop="1273" data-step="5" data-max="536" data-speed="37" data-duration="9420" data-ed="">0</div>
+                                                                </div>
+                                                                <div class="sc_skills_item_title">Company We Help</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sc_skills_column trx_addons_column-1_2">
+                                                            <div class="sc_skills_item_wrap">
+                                                                <div class="sc_skills_item">
+                                                                    <div class="sc_skills_icon icon-briefcase"></div>
+                                                                    <div class="sc_skills_total" data-start="0" data-stop="103" data-step="5" data-max="536" data-speed="20" data-duration="412" data-ed="">0</div>
+                                                                </div>
+                                                                <div class="sc_skills_item_title">Corporate Programs</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sc_skills_column trx_addons_column-1_2">
+                                                            <div class="sc_skills_item_wrap">
+                                                                <div class="sc_skills_item">
+                                                                    <div class="sc_skills_icon icon-tactics-1"></div>
+                                                                    <div class="sc_skills_total" data-start="0" data-stop="663" data-step="5" data-max="536" data-speed="22" data-duration="2917" data-ed="">0</div>
+                                                                </div>
+                                                                <div class="sc_skills_item_title">Trainings Cources</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="sc_skills_column trx_addons_column-1_2">
+                                                            <div class="sc_skills_item_wrap">
+                                                                <div class="sc_skills_item">
+                                                                    <div class="sc_skills_icon icon-avatar"></div>
+                                                                    <div class="sc_skills_total" data-start="0" data-stop="245" data-step="5" data-max="536" data-speed="19" data-duration="931" data-ed="">0</div>
+                                                                </div>
+                                                                <div class="sc_skills_item_title">Strategic Partners</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="vc_empty_space empty_8">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row-full-width vc_clearfix"></div>
+                                <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid bg_position_center vc_custom_1474881086363 vc_row-has-fill fullwidth_1 scheme_dark">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_empty_space empty_9-3">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                                <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                                    <div class="wpb_column vc_column_container vc_col-sm-5">
+                                                        <div class="vc_column-inner ">
+                                                            <div class="wpb_wrapper"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpb_column vc_column_container vc_col-sm-7">
+                                                        <div class="vc_column-inner ">
+                                                            <div class="wpb_wrapper">
+                                                                <div class="sc_blockquote sc_blockquote_default">
+                                                                    <h2 class="sc_blockquote_content">
+                                                                        Simplyfying HR operations
+                                                                        <br>to let you
+                                                                        <span class="trx_addons_hovered">focus on your mission!</span>
+                                                                    </h2>
+                                                                    <!-- <div class="sc_blockquote_title">Terry M. White - President</div> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="vc_empty_space empty_11-2">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row-full-width vc_clearfix"></div>
+                                <div class="vc_row wpb_row vc_row-fluid fullwidth_1">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_empty_space empty_6-8">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row wpb_row vc_row-fluid fullwidth_1">
+                                    <div class="wpb_column vc_column_container vc_col-sm-6">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper">
+                                                        <h5 class="cblue">CORE RESPONSIBILITES</h5>
+                                                        <h2>G7cr support HR resources to carry out process at their fingertips from anywhere,anytime!!</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_column vc_column_container vc_col-sm-6">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_empty_space empty_3 hide_on_mobile">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper">
+                                                        <p>
+                                                            Our Company offers the comprehensive HR solutions such as performance management,
+                                                            payroll management, leave management, on-boarding and exit formalities
+                                                        </p>
+
+                                                        <p>With on-ongoing situation of COVID, we focus on providing a platform that empowers the remotely working companies to come together and achieve goals without affecting business! </p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row wpb_row vc_row-fluid fullwidth_1">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_empty_space empty_3">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                                <div class="sc_services sc_services_default" data-slides-per-view="4" data-slides-min-width="150">
+                                                    <div class="sc_services_columns sc_item_columns trx_addons_columns_wrap columns_padding_bottom">
+                                                        <div class="trx_addons_column-1_4">
+                                                            <div class="sc_services_item">
+                                                                <div class="sc_services_item_info">
+                                                                    <div class="sc_services_item_header">
+                                                                        <div class="sc_services_item_icon trx_addons_icon-money"></div>
+                                                                        <h5 class="sc_services_item_title">
+                                                                            <a href="single-service.html">Enable self service portal for employees </a>
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="trx_addons_column-1_4">
+                                                            <div class="sc_services_item">
+                                                                <div class="sc_services_item_info">
+                                                                    <div class="sc_services_item_header">
+                                                                        <div class="sc_services_item_icon trx_addons_icon-tactics"></div>
+                                                                        <h5 class="sc_services_item_title">
+                                                                            <a href="single-service.html">Glance quick information on macro level </a>
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="trx_addons_column-1_4">
+                                                            <div class="sc_services_item">
+                                                                <div class="sc_services_item_info">
+                                                                    <div class="sc_services_item_header">
+                                                                        <div class="sc_services_item_icon trx_addons_icon-distribution"></div>
+                                                                        <h5 class="sc_services_item_title">
+                                                                            <a href="single-service.html">Glance quick information on macro level </a>
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="trx_addons_column-1_4">
+                                                            <div class="sc_services_item">
+                                                                <div class="sc_services_item_info">
+                                                                    <div class="sc_services_item_header">
+                                                                        <div class="sc_services_item_icon trx_addons_icon-gardening"></div>
+                                                                        <h5 class="sc_services_item_title">
+                                                                            <a href="single-service.html">Track real-time data</a>
+                                                                        </h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="vc_empty_space empty_11">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1467641241328 vc_row-has-fill">
+                                    <div class="wpb_column vc_column_container vc_col-sm-4">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_empty_space empty_4-5">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                                <div class="sc_testimonials sc_testimonials_default swiper-slider-container slider_swiper slider_no_controls" data-slides-min-width="150">
+                                                    <div class="sc_testimonials_slider sc_item_slider slides swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="sc_testimonials_item">
+                                                                <div class="sc_testimonials_item_content">
+                                                                    <p>These guys are real professionals. Their experts has helped us so many times!</p>
+                                                                </div>
+                                                                <div class="sc_testimonials_item_author">
+                                                                    <div class="sc_testimonials_item_author_data">
+                                                                        <h4 class="sc_testimonials_item_author_title">Fred Peterson</h4>
+                                                                        <div class="sc_testimonials_item_author_subtitle">CEO, Expert Ltd.</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="sc_testimonials_item">
+                                                                <div class="sc_testimonials_item_content">
+                                                                    <p>HR Advisor responded quickly to questions and were a pleasure to work with.</p>
+                                                                </div>
+                                                                <div class="sc_testimonials_item_author">
+                                                                    <div class="sc_testimonials_item_author_data">
+                                                                        <h4 class="sc_testimonials_item_author_title">Janice F. Williams</h4>
+                                                                        <div class="sc_testimonials_item_author_subtitle">Manager, Work LAB</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="sc_testimonials_item">
+                                                                <div class="sc_testimonials_item_content">
+                                                                    <p>Thank you for picking the most professional employees for our big company!</p>
+                                                                </div>
+                                                                <div class="sc_testimonials_item_author">
+                                                                    <div class="sc_testimonials_item_author_data">
+                                                                        <h4 class="sc_testimonials_item_author_title">Pat Spencer</h4>
+                                                                        <div class="sc_testimonials_item_author_subtitle">Manager, Music Co.</div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="vc_empty_space empty_4 hide_on_mobile">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                                <div class="vc_empty_space empty_6 hide_on_tablet">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wpb_column vc_column_container vc_col-sm-8 vc_hidden-xs">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="wpb_single_image wpb_content_element vc_align_left vc_custom_1468592892644">
+
+                                                    <figure class="wpb_wrapper vc_figure">
+                                                        <div class="vc_single_image-wrapper vc_box_border_grey">
+                                                            <img src="https://mhrms.io/layout/images/image-2.jpg" class="vc_single_image-img attachment-full" alt="" />
+                                                        </div>
+                                                    </figure>
+                                                </div>
+                                                <div class="vc_empty_space empty_6 hide_on_mobile">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vc_row-full-width vc_clearfix"></div>
+                                <div class="vc_row wpb_row vc_row-fluid fullwidth_1">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="vc_empty_space empty_7-4">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                                <div class="wpb_text_column wpb_content_element">
+                                                    <div class="wpb_wrapper">
+                                                        <h1>Leave Management</h1>
+                                                    </div>
+                                                </div>
+                                                <div class="sc_courses sc_courses_default" data-slides-per-view="3" data-slides-min-width="150">
+                                                    <div class="sc_courses_columns sc_item_columns trx_addons_columns_wrap columns_padding_bottom">
+                                                        <div class="trx_addons_column-1_3">
+                                                            <div class="sc_courses_item trx_addons_hover trx_addons_hover_style_links">
+                                                                <div class="sc_courses_item_thumb">
+                                                                    <img src="https://mhrms.io/layout/images/image-1-e1467722658635-370x231.jpg" class="attachment-hr_advisor-thumb-med size-hr_advisor-thumb-med" alt="" />
+                                                                    <span class="sc_courses_item_categories">
+                                                                        <a href="single-service.html" title="View all posts in Motivation">Online Assessment</a>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="sc_courses_item_info">
+                                                                    <div class="sc_courses_item_header">
+                                                                        <h4 class="sc_courses_item_title">Easily accessible featured with secure login</h4>
+                                                                        <div class="sc_courses_item_date">Started on July 7, 2016</div>
+                                                                    </div>
+                                                                    <!--  <div class="sc_courses_item_price">$80
+                                                                 <span class="sc_courses_item_period">month</span>
+                                                             </div> -->
+                                                                </div>
+                                                                <div class="trx_addons_hover_mask"></div>
+                                                                <div class="trx_addons_hover_content">
+                                                                    <h4 class="trx_addons_hover_title">Online Assessment</h4>
+                                                                    <div class="trx_addons_hover_text">
+                                                                        Easily accessible featured with secure login where results are delivered with the touch of a button.
+                                                                    </div>
+                                                                    <div class="trx_addons_hover_links">
+                                                                        <a target="_blank" href="#" class="trx_addons_hover_link">More Info</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="trx_addons_column-1_3">
+                                                            <div class="sc_courses_item trx_addons_hover trx_addons_hover_style_links">
+                                                                <div class="sc_courses_item_thumb">
+                                                                    <img src="https://mhrms.io/layout/images/1-370x231.jpg" class="attachment-hr_advisor-thumb-med size-hr_advisor-thumb-med" alt="" />
+                                                                    <span class="sc_courses_item_categories">
+                                                                        <a href="single-service.html" title="View all posts in Marketing">Video Assessment</a>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="sc_courses_item_info">
+                                                                    <div class="sc_courses_item_header">
+                                                                        <h4 class="sc_courses_item_title">Webcam and Mobile Camera Monitoring features</h4>
+                                                                        <div class="sc_courses_item_date">Started on July 7, 2016</div>
+                                                                    </div>
+                                                                    <!--  <div class="sc_courses_item_price">Free!</div> -->
+                                                                </div>
+                                                                <div class="trx_addons_hover_mask"></div>
+                                                                <div class="trx_addons_hover_content">
+                                                                    <h4 class="trx_addons_hover_title">Video Assessment</h4>
+                                                                    <div class="trx_addons_hover_text">
+                                                                        Determine Communication, Body Language and Cultural Fit in early stages.
+                                                                    </div>
+                                                                    <div class="trx_addons_hover_links">
+                                                                        <a target="_blank" href="#" class="trx_addons_hover_link">More Info</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="trx_addons_column-1_3">
+                                                            <div class="sc_courses_item trx_addons_hover trx_addons_hover_style_links">
+                                                                <div class="sc_courses_item_thumb">
+                                                                    <img src="https://mhrms.io/layout/images/image-5-e1467722772524-370x231.jpg" class="attachment-hr_advisor-thumb-med size-hr_advisor-thumb-med" alt="" />
+                                                                    <span class="sc_courses_item_categories">
+                                                                        <a href="single-service.html" title="View all posts in Team building">Voice Assessment</a>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="sc_courses_item_info">
+                                                                    <div class="sc_courses_item_header">
+                                                                        <h4 class="sc_courses_item_title">Smartest way to test the candidate’s language skills.</h4>
+                                                                        <div class="sc_courses_item_date">Started on July 7, 2016</div>
+                                                                    </div>
+                                                                    <!--  <div class="sc_courses_item_price">$120
+                                                                 <span class="sc_courses_item_period">month</span>
+                                                             </div> -->
+                                                                </div>
+                                                                <div class="trx_addons_hover_mask"></div>
+                                                                <div class="trx_addons_hover_content">
+                                                                    <h4 class="trx_addons_hover_title">Voice Assessment</h4>
+                                                                    <div class="trx_addons_hover_text">
+                                                                        Gauge the candidate’s ability to listen and synthesize the information.
+                                                                    </div>
+                                                                    <div class="trx_addons_hover_links">
+                                                                        <a target="_blank" href="#" class="trx_addons_hover_link">More Info</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="sc_item_button sc_button_wrap sc_align_center">
+                                                    <a target="_blank" href="#" class="sc_button sc_button_default sc_button_size_normal sc_button_icon_left">
+                                                        <span class="sc_button_text">
+                                                            <span class="sc_button_title">More info</span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                                <div class="vc_empty_space empty_8-7">
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="site_footer_wrap">
+                <div class="footer_wrap widget_area scheme_dark">
+                    <div class="footer_wrap_inner widget_area_inner">
+                        <div class="content_wrap">
+                            <div class="columns_wrap">
+                                <aside class="column-1_4 widget widget_text">
+                                    <div class="textwidget">
+                                        <img style="   background: #fff;   padding: 2%;" src="#" alt="mHrms">
+
+
+                                        <ul class="trx_addons_list  icons">
+                                            <li class="icon-home-alt">
+                                                3M-215 Building, east of NGEF,
+                                                <br />Mithra Towers,<br />Bangalore, KA, 560043
+                                            </li>
+                                            <li class="icon-white">info@g7cr.com</li>
+                                            <li class="icon-tablet">+91 080-4271 8000 <br /> +91 080-2507 1950</li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                                <aside class="column-1_4 widget widget_nav_menu">
+                                    <h5 class="widget_title">Links</h5>
+                                    <div class="menu-footer-links-container">
+                                        <ul id="menu-footer-links" class="menu">
+                                            <li class="menu-item"><a target="_blank" href="https://ggogle.com">About Us</a></li>
+                                            <li class="menu-item"><a target="_blank" href="https://hire-train-deploy.html">Services</a></li>
+
+                                            <li class="menu-item"><a target="_blank" href="https://contactus.html">Support</a></li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                                <aside class="column-1_4 widget widget_nav_menu">
+                                    <h5 class="widget_title">Navigate</h5>
+                                    <div class="menu-footer-navigate-container">
+                                        <ul id="menu-footer-navigate" class="menu">
+                                            <li class="menu-item current-menu-item">
+                                               
+                                            </li>
+                                            <li class="menu-item"><a target="_blank" href="https://blog/">Blog</a></li>
+                                            <li class="menu-item"><a target="_blank" href="https://contactus.html">Contacts</a></li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                                <aside class="column-1_4 widget widget_text">
+                                    <h5 class="widget_title">Subscribe</h5>
+                                    <div class="textwidget">
+                                        <ul class="trx_addons_list  icons">
+                                            <li class="icon-facebook"><a href="#">Facebook</a></li>
+                                            <li class="icon-twitter"><a href="#">Twitter</a></li>
+                                            <li class="icon-linkedin"><a href="#">Linkedin</a></li>
+                                            <li class="icon-gplus"><a href="#">Gplus</a></li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+        </div>
+    
+    <script>
+
+
+
+        document.onkeypress = function (event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                return false;
+            }
+        }
+        document.onmousedown = function (event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                return false;
+            }
+        }
+        document.onkeydown = function (event) {
+            event = (event || window.event);
+            if (event.keyCode == 123) {
+                return false;
+            }
+        }
+
+
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+
+    </script>
+    <script src="~/Scripts/action-min.js"></script>
+    <script src="~/Scripts/customscript.js"></script>
+    <script src="~/Scripts/addons.js"></script>
+    <script src="~/Scripts/layeranimation.js"></script>
+    <script src="~/Scripts/migrate-min.js"></script>
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/slideanimation.js"></script>
+    <script src="~/Scripts/script.js"></script>
+    <script src="~/Scripts/swiper.js"></script>
+    <script src="~/Scripts/themepunch revolution.js"></script>
+    <script src="~/Scripts/themepunch.js"></script>
+    <a href="#" class="trx_addons_scroll_to_top trx_addons_icon-up" title="Scroll to top"></a>
+</body>
+
+
+
+</html>

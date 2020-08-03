@@ -1,0 +1,83 @@
+﻿@model LeaveDetailManagement.Models.leavedetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>leavedetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.empname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.empname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FromDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FromDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ToDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Leavetype)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Leavetype)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descr)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descr)
+        </dd>
+
+        <dt>
+            @Html.LabelFor(model => model.status, htmlAttributes: new { @class = "control-label col-md-2" })
+        </dt>
+        <dd>
+            <div class="form-group">
+
+                <div class="col-md-10">
+                    <label class="radio-inline">
+                        @Html.RadioButtonFor(model => model.status, "Accepted", new { @name = "stat" })
+                        Acccepted
+                    </label>
+                    <label class="radio-inline">
+                        @Html.RadioButtonFor(model => model.status, "Rejected", new { @name = "stat" })
+                        Rejected
+                    </label>
+                    @Html.ValidationMessageFor(model => model.status, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </dd>
+    </dl>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-default" />
+            
+        </div>
+    </div>
+</div>
+<p>
+   
+    @Html.ActionLink("Back to List", "Index")
+</p>
